@@ -1,10 +1,14 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  overflow-x: hidden;
 }
 .container {
   /* margin: 0 7%; */
-  overflow-y: hidden;
+  overflow: hidden;
   box-sizing: border-box;
 }
 .timer {
@@ -32,6 +36,14 @@
   width: 100%;
   flex-wrap: wrap;
   margin: 0 7%;
+}
+@media screen and (max-width: 768px) {
+  .first-section {
+    flex-direction: column;
+  }
+  .row-one {
+    width: 100%;
+  }
 }
 .row-one {
   width: 50%;
@@ -101,6 +113,14 @@
   width: 100%;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 1024px) {
+  .forms-and-fliers {
+    flex-direction: column;
+  }
+  .flier {
+    align-self: center;
+  }
+}
 .flier img {
   margin-left: 0%;
   /* width: 80%; */
@@ -132,7 +152,7 @@
 .box2-registration-form {
   padding-top: 30px;
 }
-form input {
+form input:not(.radio input) {
   border: 2px solid black;
   border-radius: 5px;
   margin-top: 7px;
@@ -144,8 +164,12 @@ form label {
 }
 .radio {
   display: flex;
+  margin-top: 1.5vh;
 }
 
+.radio label {
+  margin-right: 30px;
+}
 /* Second Section Endss Here */
 
 /* Third Section Starts Here */
@@ -239,7 +263,7 @@ form label {
   padding-left: 15px;
 }
 .bonus-package {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 25%;
   margin-bottom: 3vh;
   /* display: flex;
@@ -291,7 +315,7 @@ form label {
 .package-three,
 .package-four {
   font-size: 1.2em;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   padding: 0 8px;
 }
 .bonus-writeup-area {
