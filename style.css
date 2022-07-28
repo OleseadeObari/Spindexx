@@ -37,6 +37,9 @@ body {
   flex-wrap: wrap;
   margin: 0 7%;
 }
+.row-one {
+  width: 50%;
+}
 @media screen and (max-width: 768px) {
   .first-section {
     flex-direction: column;
@@ -44,9 +47,6 @@ body {
   .row-one {
     width: 100%;
   }
-}
-.row-one {
-  width: 50%;
 }
 .writeup {
   margin-bottom: 25px;
@@ -87,12 +87,6 @@ body {
   text-decoration: none;
   color: rgb(255, 255, 255);
   padding-top: 20px;
-}
-.virtual-cards {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
 .row-two {
   width: 50%;
@@ -159,6 +153,10 @@ form input:not(.radio input) {
   /* height: 40px; */
   padding: 10px;
   width: 100%;
+}
+.submit {
+  align-self: center;
+  /* padding-left: 10px; */
 }
 form label {
 }
@@ -257,6 +255,11 @@ form label {
 .bonus-area {
   display: flex;
   /* flex-wrap: wrap; */
+}
+@media screen and (max-width: 868px) {
+  .bonus-area {
+    flex-direction: column;
+  }
 }
 .bonus {
   margin: 3vh 0 5vh 0;
@@ -439,4 +442,21 @@ form label {
 .eight-content {
   margin: 0 7%;
 }
-/* TRY FLEXWRAPPING ALL SECTIONS */ ;
+footer {
+  background-color: #5274af;
+  margin-top: 3vh;
+  height: 25vh;
+}
+.footer-image {
+  /* display: block;
+  margin: 0 auto;
+  width: 50%; */
+}
+.footer-image img {
+  width: 280px;
+}
+.footer-note {
+  text-align: center;
+}
+/* TRY FLEXWRAPPING ALL S{
+  ECTIONS */ ;
