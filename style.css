@@ -11,23 +11,7 @@ body {
   overflow: hidden;
   box-sizing: border-box;
 }
-.timer {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 4vh;
-}
-.timer p {
-  font-size: 0.8em;
-  font-weight: 600;
-  margin-top: -10px;
-  color: #aaaaaa;
-}
-#number {
-  color: rgb(230, 33, 33);
-  font-size: 1.5em;
-  font-weight: 600;
-  padding: 15px;
-}
+
 .button {
   display: flex;
   justify-content: center;
@@ -39,7 +23,7 @@ body {
   font-size: 1.2em;
   color: #ffffff;
   text-decoration: none;
-  background-color: #568fdf;
+  background-color: #e73d3d;
   padding: 10px;
   border-radius: 5px;
 }
@@ -52,21 +36,6 @@ body {
   margin: 3% 7%;
   align-items: center;
 }
-#btn {
-  border: 1px solid #568fdf;
-  border-radius: 5px;
-  background-color: #568fdf;
-  height: 40px;
-  margin-bottom: 3vh;
-  /* box-shadow: -4px 4px 2px rgba(37, 102, 201, 0.8); */
-}
-#btn a {
-  font-size: 1.4em;
-  text-decoration: none;
-  color: #ffffff;
-  padding: 20px;
-}
-
 .row-one {
   width: 50%;
   max-width: 900px;
@@ -91,14 +60,13 @@ body {
 .writeup {
   margin-bottom: 25px;
 }
-.head {
-  /* width: 70%; */
+.writeup-head {
   font-size: 3em;
   margin-bottom: 3vh;
 }
 #green-text {
   color: green;
-  font-size: 0.9em;
+  /* font-size: 2em; */
 }
 #black-text {
   font-size: 0.9em;
@@ -149,16 +117,18 @@ body {
     align-self: center;
   }
 }
-/* .flier {
-  width: 50%;
-} */
+.right-section {
+  margin-top: 0;
+}
+.box {
+  /* margin-top: -4vh; */
+}
 .box1 {
-  border-bottom: 2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 4px;
-  /* background-color: rgb(238, 151, 64); */
-
+  margin-top: -13vh;
   padding: 5px;
-  width: 100%;
+  width: 97%;
   text-align: center;
 }
 #webinar {
@@ -166,35 +136,36 @@ body {
   padding: 5px;
   width: 100%;
 }
-.box2-registration-form {
-  padding-top: 30px;
+.box {
+  margin: 0 30px;
 }
-form input:not(.radio input) {
-  border: 2px solid black;
+.box2-registration-form {
+  /* margin-top: 5vh; */
+  padding-top: 30px;
+  /* border: 1px solid red; */
+  background-color: #cac8c8;
+}
+form input {
+  border: 2px solid #cac8c8;
   border-radius: 5px;
-  margin-top: 7px;
+  margin: 7px 0;
   /* height: 40px; */
-  padding: 10px;
-  width: 100%;
+  padding: 10px 5px;
+  width: 85%;
 }
 .submit {
+  background-color: green;
+  border: none;
+  color: white;
+  font-weight: 600;
   cursor: pointer;
-}
-form label {
+  width: 60%;
+  margin-bottom: 30px;
 }
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.radio {
-  display: flex;
-  margin-bottom: 10px;
-  align-self: flex-start;
-}
-
-.radio label {
-  margin-right: 30px;
 }
 /* Second Section Endss Here */
 
@@ -216,10 +187,17 @@ form {
 .paragraph {
   font-size: 1.2em;
   padding-bottom: 4vh;
-  line-height: 25px;
+  line-height: 40px;
+  text-align: center;
 }
-.b .c .d .e .f .g {
+.b .c .d .e .f {
   font-size: 1.2em;
+}
+.paragraph-g {
+  font-size: 1.2em;
+  padding-bottom: 4vh;
+  line-height: 45px;
+  text-align: center;
 }
 .story-image {
   padding: 6vh;
@@ -266,6 +244,7 @@ form {
   height: 25px;
 }
 .bonus-sub-writeup {
+  text-align: center;
   padding-left: 15px;
   padding-bottom: 3vh;
   font-size: 1.2em;
@@ -391,7 +370,7 @@ form {
 .fifth-content {
   margin: 0 7%;
 }
-.top-section-writeup {
+.testimonial-writeup {
 }
 .top-section-header {
   text-align: center;
@@ -401,9 +380,12 @@ form {
 .top-section-paragraph {
   font-size: 1.1em;
   padding-bottom: 2vh;
+  text-align: center;
+  line-height: 35px;
 }
 .top-section-3 {
   color: rgb(238, 151, 64);
+  text-align: center;
 }
 .testimonials {
   /* background-color: #5274af; */
@@ -416,7 +398,7 @@ form {
   height: 100px;
   /* object-fit: cover; */
   border-radius: 50%;
-  border: 2px solid red;
+  border: 1px solid black;
   display: block;
   margin: 2vh auto;
 }
@@ -429,11 +411,13 @@ form {
   border: 1px solid black;
 }
 .bottom-section {
-  /* font-size: 1.2em; */
+  margin-top: 6vh;
 }
 .bottom-section-1 {
   font-size: 1.2em;
   padding-bottom: 2vh;
+  text-align: center;
+  line-height: 35px;
 }
 /* Section Five Ends Here/* 
 
@@ -478,20 +462,39 @@ form {
   margin: 0 7%;
 }
 footer {
-  background-color: #5274af;
+  background-color: #000;
   margin-top: 3vh;
-  height: 25vh;
+  height: 30vh;
+  width: 100%;
 }
 .footer-image {
-  /* display: block;
-  margin: 0 auto;
-  width: 50%; */
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .footer-image img {
+  border-radius: 5px;
   width: 280px;
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .footer-note {
+  color: #ffffff;
   text-align: center;
+  margin: 8vh 0 2vh 0;
+}
+.footer-sm-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons {
+  margin-left: 10px;
 }
 /* TRY FLEXWRAPPING ALL S{
   ECTIONS */ ;
