@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   overflow-x: hidden;
@@ -19,32 +20,45 @@ body {
   margin-top: 5vh;
   margin-bottom: 8vh;
 }
-.btnn a {
+.btnn {
   font-size: 1.2em;
-  color: #ffffff;
-  text-decoration: none;
   background-color: #e73d3d;
   padding: 10px;
   border-radius: 5px;
+  text-align: center;
+}
+.btnn a {
+  color: #ffffff;
+  text-decoration: none;
 }
 /* First section styling */
 .first-section {
+  margin: 3% 7%;
   display: flex;
   flex-direction: row;
   width: 100%;
-  flex-wrap: wrap;
-  margin: 3% 7%;
   align-items: center;
+}
+.first-content {
 }
 .row-one {
   width: 50%;
   max-width: 900px;
+}
+.under-head {
+  display: none;
 }
 @media screen and (max-width: 1016px) {
   .first-section {
     flex-direction: column;
     align-items: center;
     margin: 0 2%;
+  }
+  .first-section-row-two {
+    display: none;
+  }
+  .under-head {
+    display: block;
   }
   .row-one {
     width: 100%;
@@ -56,6 +70,12 @@ body {
     text-align: center;
     margin-right: 0;
   }
+  .row-two img {
+    width: 450px;
+  }
+  /* .row-two {
+    margin-bottom: 20px;
+  } */
 }
 .writeup {
   margin-bottom: 25px;
@@ -98,15 +118,21 @@ body {
 
 /* Second Section Starts Here */
 .second-section {
-  margin: 4% 7%;
+  margin: 4% 4%;
 }
 .forms-and-fliers {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  flex-wrap: wrap;
-  align-items: center;
+}
+
+.right-section {
+  margin-top: 20px;
+}
+.flier img {
+  width: 100%;
+  height: 480px;
 }
 @media screen and (max-width: 1024px) {
   .forms-and-fliers {
@@ -117,18 +143,10 @@ body {
     align-self: center;
   }
 }
-.right-section {
-  margin-top: 0;
-}
-.box {
-  /* margin-top: -4vh; */
-}
 .box1 {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 4px;
-  margin-top: -13vh;
   padding: 5px;
-  width: 97%;
   text-align: center;
 }
 #webinar {
@@ -275,9 +293,6 @@ form {
   width: 100%;
   max-width: 700px;
   margin-bottom: 3vh;
-  /* display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; */
 }
 /* @media screen and (max-width: 868px) {
   .bonus-area {
@@ -388,7 +403,6 @@ form {
   text-align: center;
 }
 .testimonials {
-  /* background-color: #5274af; */
   margin: 4vh 0 7vh 0;
 }
 .avatar {
@@ -396,7 +410,6 @@ form {
 .profile-image {
   width: 100px;
   height: 100px;
-  /* object-fit: cover; */
   border-radius: 50%;
   border: 1px solid black;
   display: block;
@@ -407,7 +420,6 @@ form {
   font-size: 1.1em;
 }
 #hr {
-  /* background-color: rgb(238, 151, 64); */
   border: 1px solid black;
 }
 .bottom-section {
@@ -456,6 +468,7 @@ form {
 }
 .bottom-row {
 }
+
 /* seventh section ends here */
 
 .eight-content {
