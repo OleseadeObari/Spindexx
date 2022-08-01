@@ -111,13 +111,13 @@ body {
     width: 450px;
   }
   .sub-head-one {
-    font-size: 1.1em;
+    padding: 0 10px;
   }
   .two {
-    font-size: 1.1em;
+    padding: 0 10px;
   }
   .writeup-head {
-    font-size: 2.5em;
+    padding: 0 10px;
   }
 }
 /* First Section Ends Here */
