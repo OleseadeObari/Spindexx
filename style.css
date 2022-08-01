@@ -48,35 +48,7 @@ body {
 .under-head {
   display: none;
 }
-@media screen and (max-width: 1016px) {
-  .first-section {
-    flex-direction: column;
-    align-items: center;
-    margin: 0 2%;
-  }
-  .first-section-row-two {
-    display: none;
-  }
-  .under-head {
-    display: block;
-  }
-  .row-one {
-    width: 100%;
-    align-self: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    margin-right: 0;
-  }
-  .row-two img {
-    width: 450px;
-  }
-  /* .row-two {
-    margin-bottom: 20px;
-  } */
-}
+
 .writeup {
   margin-bottom: 25px;
 }
@@ -113,7 +85,41 @@ body {
   color: rgb(255, 255, 255);
   padding-top: 20px;
 }
-
+@media screen and (max-width: 1016px) {
+  .first-section {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2%;
+  }
+  .first-section-row-two {
+    display: none;
+  }
+  .under-head {
+    display: block;
+  }
+  .row-one {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 0;
+  }
+  .row-two img {
+    width: 450px;
+  }
+  .sub-head-one {
+    font-size: 1.1em;
+  }
+  .two {
+    font-size: 1.1em;
+  }
+  .writeup-head {
+    font-size: 2.5em;
+  }
+}
 /* First Section Ends Here */
 
 /* Second Section Starts Here */
