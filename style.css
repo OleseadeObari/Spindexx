@@ -8,7 +8,6 @@ body {
   overflow-x: hidden;
 }
 .container {
-  /* margin: 0 7%; */
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -48,7 +47,6 @@ body {
 .under-head {
   display: none;
 }
-
 .writeup {
   margin-bottom: 25px;
 }
