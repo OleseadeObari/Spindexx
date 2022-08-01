@@ -33,7 +33,7 @@ body {
 }
 /* First section styling */
 .first-section {
-  margin: 3% 7%;
+  margin: 3% 8%;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -53,23 +53,23 @@ body {
   margin-bottom: 25px;
 }
 .writeup-head {
-  font-size: 3em;
+  font-size: 2.5em;
   margin-bottom: 3vh;
 }
 #green-text {
   color: green;
-  /* font-size: 2em; */
+  font-size: 0.9em;
 }
 #black-text {
   font-size: 0.9em;
 }
 .sub-head-one {
   color: rgb(230, 33, 33);
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin-bottom: 2vh;
 }
 .two {
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 .btn {
   border: 1px solid rgb(0, 0, 0);
